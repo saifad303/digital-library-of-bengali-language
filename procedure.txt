@@ -1,0 +1,67 @@
+CREATE PROCEDURE home_page( )
+BEGIN SELECT * 
+FROM category
+ORDER BY name ASC ;
+
+SELECT * 
+FROM subcategory
+ORDER BY name ASC ;
+
+SELECT books.*, category.name catname 
+FROM books, subcategory, category
+where books.subcategoryid = subcategory.id and
+subcategory.categoryid = category.id
+ORDER BY books.id DESC 
+LIMIT 9 ;
+
+END
+==============================================================
+CREATE PROCEDURE book_details(in ids int)
+BEGIN
+
+SELECT * 
+FROM category
+ORDER BY name ASC ;
+
+SELECT * 
+FROM subcategory
+ORDER BY name ASC ;
+
+
+SELECT * FROM books where id = ids;
+END
+
+
+==============================================================
+
+CREATE PROCEDURE user_notification()
+BEGIN
+
+SELECT * 
+FROM pay4mem
+ORDER BY id DESC ;
+
+END
+
+===============================================================
+
+
+CREATE PROCEDURE browse_page( )
+BEGIN 
+SELECT * 
+FROM category
+ORDER BY name ASC ;
+
+SELECT * 
+FROM subcategory
+ORDER BY name ASC ;
+
+SELECT books.*, category.name catname 
+FROM books, subcategory, category
+where books.subcategoryid = subcategory.id and
+subcategory.categoryid = category.id
+ORDER BY books.id DESC 
+LIMIT 16 ;
+
+END
+

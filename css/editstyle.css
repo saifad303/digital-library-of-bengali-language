@@ -1,0 +1,226 @@
+
+
+
+.glyphicon { margin-right:10px; }
+.panel-body { padding:0px; }
+.panel-body table tr td { padding-left: 15px }
+.panel-body .table {margin-bottom: 0px; }
+
+/*.panel-group {
+    margin-bottom: 0px !important;
+    margin-right: 49px !important;
+    margin-left: -15px !important;
+}*/
+.col-md-3 {
+    margin-left: -35px;
+}
+.saif {
+    border-radius: 8px;
+	margin-top: 51px;
+}
+.hasan{
+	border-radius:0px !important;
+	padding: 0px;
+	height: 33px;
+	padding: -1px !important;
+	margin-top: -6 !important;
+	margin-left: -3px;
+	border-radius:0px 10px 10px 0px !important;
+
+}
+.hasan:hover{
+	background-color:#222 !important;
+}
+.download{
+	margin-top:45px;
+}
+.category{
+	border-radius:0px 10px 10px 0px !important;
+	margin-top: -35px;
+}
+
+.btn-default {
+    color: #fff !important;
+    background-color: #090 !important;
+    border-color: #009900 !important;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+    color: #009900 !important;
+    background-color: #f8f8f8 !important;
+    border-color: #f8f8f8 !important;
+}
+
+
+.footer {
+    text-align: center;
+	margin-left: 115px;
+}
+.login-left p, .login-right p {
+    color: #817C7C;
+}
+ul.f_nav li a {
+    color: #817C7C;
+}
+p.tab-text {
+    color: #817C7C;
+}
+.join h6 {
+    margin-left: 6%;
+}
+.panel-body{
+	padding:0px !important;
+}
+
+.join input[type="text"] {
+	width: 48% !important;
+	color: #C3C3C3;
+	letter-spacing: 1px;
+	font-weight: 300;
+	font-size: 15px;
+	padding: 5px 5px !important;
+	border-radius: 10px 0px 0px 10px;
+	outline: none;
+	font-family: 'Lato-Regular';
+	text-align: left;
+}
+
+.join input[type="submit"] {
+	outline: none;
+	cursor: pointer;
+	width: 10% !important;
+	padding: 2px 0 5px !important;
+	background: #090;
+	color: #FFF;
+	font-size: 19px !important;
+	font-weight: 400;
+	margin: 0px 0 0 -3px !important;
+	border: none;
+	-webkit-apperance: none;
+	border-radius: 0px 10px 10px 0px;
+}
+
+.header-top-left {
+	
+}
+
+.catcolor {
+	background-color: #090 !important;
+	border-color: #090 !important;
+}
+.header-right {
+	float: right !important;
+	margin-top: 0px !important;
+}
+.btn-group, .btn-group-vertical {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 100px;
+	margin-top: -55px;
+}
+.profile{
+		margin-top: 0px !important;
+}
+/* search code */
+
+ .container{
+   
+}
+
+.filter-col{
+    padding-left:10px;
+    padding-right:10px;
+	margin-bottom: -20px;
+}
+.news-letter {
+	background-color: #F7F7F7;
+	padding: 10px 0px !important;
+}
+.panel {
+    margin-bottom: 0px !important;
+	}
+.btn-primary {
+	color: #fff;
+	background-color: #090 !important;
+	border-color: #090 !important;
+	padding: 5px 20px 10px 20px;
+    border-radius: 0px 0px 30px 30px;
+}
+
+/* category code */
+
+ html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+footer {
+  padding: 30px 0;
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -60%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -60%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 60%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 60%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 60%; /* 6 columns */
+  }
+}
+
+/* extra css */.font{font-size: 15px !important;letter-spacing:0px !important;}.fonts{font-size: 15px !important;letter-spacing: 0px !important;}
+
+.brosize{
+	font-size:15px !important;
+	letter-spacing:0px !important;
+}
+.probutton{
+	color: #090 !important;
+background-color: #FFF !important;
+border-color: #FFF !important;
+}
+.kb{
+	float:right !important;
+}
+

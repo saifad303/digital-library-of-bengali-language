@@ -1,0 +1,78 @@
+
+DROP PROCEDURE `book_details`//
+CREATE DEFINER=`root`@`localhost` PROCEDURE `book_details`(in ids int)
+BEGIN
+
+SELECT * 
+FROM category
+ORDER BY name ASC ;
+
+SELECT * 
+FROM subcategory
+ORDER BY name ASC ;
+
+
+SELECT * FROM books where id = ids;
+END
+=======================================
+DROP PROCEDURE `browse_page`//
+CREATE DEFINER=`root`@`localhost` PROCEDURE `browse_page`(in _START INTEGER,  in _LIMIT INTEGER)
+BEGIN SELECT * 
+FROM category
+ORDER BY name ASC ;
+
+SELECT * 
+FROM subcategory
+ORDER BY name ASC ;
+
+PREPARE STMT FROM 
+" SELECT books.*, category.name catname 
+FROM books, subcategory, category
+where books.subcategoryid = subcategory.id and
+subcategory.categoryid = category.id
+ORDER BY books.id DESC 
+LIMIT ?, ?"; 
+SET @START = _START; 
+SET @LIMIT = _LIMIT; 
+EXECUTE STMT USING @START, @LIMIT;
+DEALLOCATE PREPARE STMT;
+
+select count(id) total from books;
+
+END
+==============================================
+DROP PROCEDURE `home_page`//
+CREATE DEFINER=`root`@`localhost` PROCEDURE `home_page`(in _START INTEGER,  in _LIMIT INTEGER)
+BEGIN SELECT * 
+FROM category
+ORDER BY name ASC ;
+
+SELECT * 
+FROM subcategory
+ORDER BY name ASC ;
+
+PREPARE STMT FROM 
+" SELECT books.*, category.name catname 
+FROM books, subcategory, category
+where books.subcategoryid = subcategory.id and
+subcategory.categoryid = category.id
+ORDER BY books.id DESC 
+LIMIT ?, ?"; 
+SET @START = _START; 
+SET @LIMIT = _LIMIT; 
+EXECUTE STMT USING @START, @LIMIT;
+DEALLOCATE PREPARE STMT;
+
+select count(id) total from books;
+
+END
+==============================================
+DROP PROCEDURE `user_notification`//
+CREATE DEFINER=`root`@`localhost` PROCEDURE `user_notification`()
+BEGIN
+
+SELECT * 
+FROM pay4mem
+ORDER BY id DESC ;
+
+END
